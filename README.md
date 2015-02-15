@@ -1,1 +1,1 @@
-# [TechDays2015](http://www.google.fr)
+# [TechDays2015](https://techdays.microsoft.fr)

@@ -41,7 +41,7 @@ namespace TPL.DataFlow.Processor.TestService
 
 			var hotels = await Helpers.GetHotelKeysAsync(this._connectionString, this._numberOfHotels);
 
-			Parallel.ForEach(hotels, new ParallelOptions() { MaxDegreeOfParallelism = 100 }, item =>
+			Parallel.ForEach(hotels, new ParallelOptions() { MaxDegreeOfParallelism = this._degreeOfParallelism }, item =>
 			{
 				using (var client = new HttpClient())
 				{

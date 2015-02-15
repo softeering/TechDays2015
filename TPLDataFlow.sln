@@ -9,6 +9,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TPL.DataFlow.Processor.Test
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TPL.DataFlow.Processor", "TPLDataFlow\TPL.DataFlow.Processor\TPL.DataFlow.Processor.csproj", "{19047F89-25A8-484D-ACD6-79E1828D8D8A}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Info", "Info", "{B687F8CB-C51B-4E35-8FA7-A03341BDE883}"
+	ProjectSection(SolutionItems) = preProject
+		TPLDataFlow\Benchmark.xlsx = TPLDataFlow\Benchmark.xlsx
+		README.md = README.md
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

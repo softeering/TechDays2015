@@ -36,7 +36,7 @@ namespace TPL.DataFlow.Processor.TestService
 				}
 
 				return item;
-			}, new ExecutionDataflowBlockOptions() { MaxDegreeOfParallelism = 100 });
+			}, new ExecutionDataflowBlockOptions() { MaxDegreeOfParallelism = this._degreeOfParallelism });
 
 			base.RegisterAdditionalBlock(geoCodingBlock);
 			this.StartBlockInstance.LinkTo(geoCodingBlock);

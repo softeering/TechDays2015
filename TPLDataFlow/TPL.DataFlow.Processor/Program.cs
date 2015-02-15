@@ -17,11 +17,10 @@ namespace TPL.DataFlow.Processor
 		{
 			dynamic config = new JObject();
 			config.ConnectionString = "server=chcxssatech006; database=GPCMaster; user id=tempuser; password=toto123-";
-			config.DegreeOfParallelism = 10;
-			config.NumberOfHotels = 200;
+			config.DegreeOfParallelism = 100;
+			config.NumberOfHotels = 500;
 
 			var tplService = new TestServiceImpl(config);
-
 			Stopwatch sw = Stopwatch.StartNew();
 			tplService.ProcessAsync().Wait();
 			sw.Stop();
@@ -29,7 +28,7 @@ namespace TPL.DataFlow.Processor
 
 			var foreachLoopService = new TestServiceImplForeachLoop(config);
 			sw.Restart();
-			//foreachLoopService.ProcessAsync().Wait();
+			foreachLoopService.ProcessAsync().Wait();
 			sw.Stop();
 			Console.WriteLine("Foreach loop completed: {0} ms", sw.ElapsedMilliseconds);
 

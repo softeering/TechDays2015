@@ -10,7 +10,7 @@ In TypeScript you can use:
 - Classes & Inheritence
 - Interfaces
 - Generics
-- Type inference
+- Type inference & compile-time type check
 - Modules
 - "this" capture
 - Lambda

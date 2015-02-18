@@ -2,11 +2,12 @@
 
 Stream Computing Platform (SCP) is a platform to build real-time, reliable, distributed, consistent and high performance data processing applications using .NET. It is built on top of [Apache Storm](http://storm.apache.org/) -- an open source, real-time stream processing system that is available with HDInsight.
 
-This simple example goes through 3 steps:
+This simple example goes through 4 steps:
 - The spout will connect to a dynamo datasource then emit the resulting json
 - The first bolt (DeserializerBolt) deserialize the JSon result as list of entity and emit those entities
-- The second bolt (SumBolt) counts the global sum of datasources' calls
-- The third bolt (AverageBolt) counts the datasources' average duration
+- Then the second & third bolts are executed in parallel:
+ - The second bolt (SumBolt) counts the global sum of datasources' calls
+ - The third bolt (AverageBolt) counts the datasources' average duration
 
 Run this project then go to bin\Debug folder. You can find different files:
 - spout.txt => the output of the spout the "Data" field is in binary

@@ -20,4 +20,5 @@ The TopologyExample.spec file shows how the topography looks like for this examp
 Please note that the SCP Framework is currently in preview and thus should not be considered as stable.
 
 [http://azure.microsoft.com/en-us/documentation/articles/hdinsight-storm-overview/](http://azure.microsoft.com/en-us/documentation/articles/hdinsight-storm-overview/)
+
 [http://azure.microsoft.com/en-us/documentation/articles/hdinsight-hadoop-storm-scpdotnet-csharp-develop-streaming-data-processing-application/](http://azure.microsoft.com/en-us/documentation/articles/hdinsight-hadoop-storm-scpdotnet-csharp-develop-streaming-data-processing-application/)

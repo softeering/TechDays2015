@@ -19,6 +19,9 @@ namespace StreamDataProcessing
         static void Main(string[] args)
         {
 			XmlConfigurator.Configure();
+			Console.WindowWidth = 175;
+			Console.WindowHeight = 40;
+			Console.BufferHeight = 9999;
 
 			if (args.Count() > 0) //Code to run on HDInsight cluster will go there
 			{
@@ -68,6 +71,7 @@ namespace StreamDataProcessing
 				localTest.RunTestCase();
 
 
+				Console.WriteLine("Press any key to quit...");
 				Console.ReadKey();
 			}
         }

@@ -8,11 +8,11 @@ using Microsoft.SCP;
 using System.Reflection;
 using Microsoft.SCP.SCPLogger.Config;
 using log4net.Config;
-using StreamingDataProcessing.Spout;
-using StreamingDataProcessing.Bolt;
+using StreamDataProcessing.Spout;
+using StreamDataProcessing.Bolt;
 
-//[assembly: SCPLogger("SCPSample.log.Log4netLoggerFactory")]
-namespace StreamingDataProcessing
+//[assembly: SCPLogger("StreamDataProcessing.log.Log4netLoggerFactory")] --> in app.config
+namespace StreamDataProcessing
 {	
     class Program
     {
@@ -59,7 +59,7 @@ namespace StreamingDataProcessing
 			{
 				System.Environment.SetEnvironmentVariable("microsoft.scp.logPrefix", "SCPSample-LocalTest");
 				SCPRuntime.Initialize();
-
+				
 				if (Context.pluginType != SCPPluginType.SCP_NET_LOCAL)
 				{
 					throw new Exception(string.Format("unexpected pluginType: {0}", Context.pluginType));

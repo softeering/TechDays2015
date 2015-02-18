@@ -9,7 +9,7 @@ using Microsoft.SCP.Rpc.Generated;
 using System.Diagnostics;
 using SCPSample.Entities;
 
-namespace StreamingDataProcessing.Bolt
+namespace StreamDataProcessing.Bolt
 {
 	class SumBolt : ISCPBolt
 	{

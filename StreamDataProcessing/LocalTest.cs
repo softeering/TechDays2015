@@ -5,10 +5,10 @@ using System.Text;
 using System.IO;
 using System.Threading;
 using Microsoft.SCP;
-using StreamingDataProcessing.Spout;
-using StreamingDataProcessing.Bolt;
+using StreamDataProcessing.Spout;
+using StreamDataProcessing.Bolt;
 
-namespace StreamingDataProcessing
+namespace StreamDataProcessing
 {
 	class LocalTest
 	{

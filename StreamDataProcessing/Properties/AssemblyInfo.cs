@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("SCPSample")]
+[assembly: AssemblyTitle("StreamDataProcessing")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Expedia, Inc.")]
-[assembly: AssemblyProduct("SCPSample")]
+[assembly: AssemblyProduct("StreamDataProcessing")]
 [assembly: AssemblyCopyright("Copyright © Expedia, Inc. 2015")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]

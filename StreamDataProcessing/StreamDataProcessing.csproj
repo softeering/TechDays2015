@@ -69,16 +69,22 @@
     <Compile Include="Entities\Statistic.cs" />
     <Compile Include="Spout\DataLoadSpout.cs" />
     <Compile Include="LocalTest.cs" />
-    <Compile Include="Log\Log4netLogger.cs" />
-    <Compile Include="Log\Log4netLoggerFactory.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="packages.config" />
     <None Include="Readme.md" />
     <None Include="TopologyExample.spec" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\StreamDataProcessing.Log\StreamDataProcessing.Log.csproj">
+      <Project>{c20b5d8f-5c50-4bb8-bbcb-c0d779466934}</Project>
+      <Name>StreamDataProcessing.Log</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

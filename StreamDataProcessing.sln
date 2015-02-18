@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.31101.0
+VisualStudioVersion = 12.0.30723.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StreamingDataProcessing", "StreamingDataProcessing\StreamingDataProcessing.csproj", "{4EEB5BE5-6B63-4ABC-9A61-C96AD0D30B23}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StreamDataProcessing", "StreamDataProcessing\StreamDataProcessing.csproj", "{4EEB5BE5-6B63-4ABC-9A61-C96AD0D30B23}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{091DF530-2129-427B-9BCB-F722E328A966}"
 	ProjectSection(SolutionItems) = preProject
@@ -11,6 +11,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{091DF5
 		.nuget\NuGet.exe = .nuget\NuGet.exe
 		.nuget\NuGet.targets = .nuget\NuGet.targets
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StreamDataProcessing.Log", "StreamDataProcessing.Log\StreamDataProcessing.Log.csproj", "{C20B5D8F-5C50-4BB8-BBCB-C0D779466934}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -22,6 +24,10 @@ Global
 		{4EEB5BE5-6B63-4ABC-9A61-C96AD0D30B23}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4EEB5BE5-6B63-4ABC-9A61-C96AD0D30B23}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4EEB5BE5-6B63-4ABC-9A61-C96AD0D30B23}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C20B5D8F-5C50-4BB8-BBCB-C0D779466934}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C20B5D8F-5C50-4BB8-BBCB-C0D779466934}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C20B5D8F-5C50-4BB8-BBCB-C0D779466934}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C20B5D8F-5C50-4BB8-BBCB-C0D779466934}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

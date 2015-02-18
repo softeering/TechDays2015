@@ -1,14 +1,14 @@
 ﻿// This file would be loaded in HDInsight
-// bin\runspec TopologyExample.spec temp StreamingDataProcessing
+// bin\runspec TopologyExample.spec temp StreamDataProcessing
 
 {
-  :name "StreamingDataProcessing"
+  :name "StreamDataProcessing"
   :topology
     (nontx-topolopy
-      "StreamingDataProcessing"
+      "StreamDataProcessing"
 
       { "spout" (spout-spec (scp-spout  {
-              "plugin.name" "StreamingDataProcessing.exe"
+              "plugin.name" "StreamDataProcessing.exe"
               "plugin.args" ["dataloadspout"]
               "output.schema" {"default" ["json"]}
             })
@@ -19,7 +19,7 @@
 		"deserializerbolt" (bolt-spec { "spout" :shuffle }
 			(scp-bolt
 			{
-				"plugin.name" "StreamingDataProcessing.exe"
+				"plugin.name" "StreamDataProcessing.exe"
 				"plugin.args" ["deserializerbolt"]
 				"output.schema" {"default" ["entity"]}
 			})
@@ -28,7 +28,7 @@
         "sumbolt"  (bolt-spec { "deserializerbolt" :global  }
 			(scp-bolt
 			{
-				"plugin.name" "StreamingDataProcessing.exe"
+				"plugin.name" "StreamDataProcessing.exe"
 				"plugin.args" ["sumbolt"]
 				"output.schema" {"default" ["count"]}
 			})
@@ -37,7 +37,7 @@
 		 "averagebolt"  (bolt-spec { "deserializerbolt" :global  }
 			(scp-bolt
 			{
-				"plugin.name" "StreamingDataProcessing.exe"
+				"plugin.name" "StreamDataProcessing.exe"
 				"plugin.args" ["averagebolt"]
 				"output.schema" {"default" ["avg"]}
 			})

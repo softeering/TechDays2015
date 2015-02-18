@@ -9,7 +9,7 @@ using Microsoft.SCP.Rpc.Generated;
 using Newtonsoft.Json.Linq;
 using System.Net;
 
-namespace StreamingDataProcessing.Spout
+namespace StreamDataProcessing.Spout
 {
 	public class DataLoadSpout : ISCPSpout
 	{

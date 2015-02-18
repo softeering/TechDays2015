@@ -11,7 +11,7 @@ using SCPSample.Entities;
 using Newtonsoft.Json.Linq;
 using Newtonsoft.Json;
 
-namespace StreamingDataProcessing.Bolt
+namespace StreamDataProcessing.Bolt
 {
 	class DeserializerBolt : ISCPBolt
 	{

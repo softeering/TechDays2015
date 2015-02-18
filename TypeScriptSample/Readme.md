@@ -17,3 +17,6 @@ In TypeScript you can use:
 - Powerfull Visual Studio IntelliSense 
 ... and many more
  
+##Pre-requisites:
+You can manually run the tsc compiler but Visual Studio rocks ;)
+- Install the TypeScript 1.4 package for [Visual Studio 2013](https://visualstudiogallery.msdn.microsoft.com/2d42d8dc-e085-45eb-a30b-3f7d50d55304)

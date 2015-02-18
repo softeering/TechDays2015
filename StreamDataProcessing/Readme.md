@@ -1,4 +1,4 @@
-﻿#Streaming data processing
+﻿#Stream data processing
 
 Stream Computing Platform (SCP) is a platform to build real-time, reliable, distributed, consistent and high performance data processing applications using .NET. It is built on top of [Apache Storm](http://storm.apache.org/) -- an open source, real-time stream processing system that is available with HDInsight.
 

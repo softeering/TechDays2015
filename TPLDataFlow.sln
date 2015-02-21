@@ -12,7 +12,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Info", "Info", "{B687F8CB-C51B-4E35-8FA7-A03341BDE883}"
 	ProjectSection(SolutionItems) = preProject
 		TPLDataFlow\Benchmark.xlsx = TPLDataFlow\Benchmark.xlsx
-		README.md = README.md
+		TPLDataFlow\Readme.md = TPLDataFlow\Readme.md
 	EndProjectSection
 EndProject
 Global

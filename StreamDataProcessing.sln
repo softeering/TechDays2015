@@ -3,16 +3,14 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StreamDataProcessing", "StreamDataProcessing\StreamDataProcessing.csproj", "{4EEB5BE5-6B63-4ABC-9A61-C96AD0D30B23}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StreamDataProcessing", "StreamDataProcessing\StreamDataProcessing\StreamDataProcessing.csproj", "{4EEB5BE5-6B63-4ABC-9A61-C96AD0D30B23}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{091DF530-2129-427B-9BCB-F722E328A966}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StreamDataProcessing.Logger", "StreamDataProcessing\StreamDataProcessing.Logger\StreamDataProcessing.Logger.csproj", "{C20B5D8F-5C50-4BB8-BBCB-C0D779466934}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{5160A2DE-AA87-41A1-9720-CAAA8535C848}"
 	ProjectSection(SolutionItems) = preProject
-		.nuget\NuGet.Config = .nuget\NuGet.Config
-		.nuget\NuGet.exe = .nuget\NuGet.exe
-		.nuget\NuGet.targets = .nuget\NuGet.targets
+		StreamDataProcessing\Readme.md = StreamDataProcessing\Readme.md
 	EndProjectSection
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StreamDataProcessing.Logger", "StreamDataProcessing.Logger\StreamDataProcessing.Logger.csproj", "{C20B5D8F-5C50-4BB8-BBCB-C0D779466934}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

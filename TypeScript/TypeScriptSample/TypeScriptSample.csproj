@@ -80,7 +80,6 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="Content\bootstrap.css.map" />
-    <Content Include="Readme.md" />
     <None Include="Scripts\libs\jquery-2.1.3.intellisense.js" />
     <Content Include="Scripts\libs\collections.js" />
     <Content Include="Scripts\configuration.js" />

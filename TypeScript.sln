@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TypeScriptSample", "TypeScriptSample\TypeScriptSample.csproj", "{D85DB288-FCB5-43A6-A0A8-B5118C09F8A1}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{F8A276F5-B8FB-4C0D-BE5F-463344803C0F}"
 	ProjectSection(SolutionItems) = preProject
 		.nuget\NuGet.Config = .nuget\NuGet.Config
@@ -14,8 +12,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{F8A276
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Info", "Info", "{73BD80C6-B1FB-4CB2-811C-3F2B8F6CD850}"
 	ProjectSection(SolutionItems) = preProject
-		README.md = README.md
+		TypeScript\Readme.md = TypeScript\Readme.md
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TypeScriptSample", "TypeScript\TypeScriptSample\TypeScriptSample.csproj", "{D85DB288-FCB5-43A6-A0A8-B5118C09F8A1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

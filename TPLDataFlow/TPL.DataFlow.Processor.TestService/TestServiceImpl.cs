@@ -47,7 +47,7 @@ namespace TPL.DataFlow.Processor.TestService
 				{
 					await sw.WriteLineAsync(item.ToString());
 				}
-			});
+			}, new ExecutionDataflowBlockOptions() { MaxDegreeOfParallelism = 1 });
 
 			base.RegisterAdditionalBlock(saveBlock);
 			geoCodingBlock.LinkTo(saveBlock);

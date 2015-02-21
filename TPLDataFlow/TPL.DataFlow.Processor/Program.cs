@@ -17,8 +17,8 @@ namespace TPL.DataFlow.Processor
 		{
 			dynamic config = new JObject();
 			config.ConnectionString = "server=chcxssatech006; database=GPCMaster; user id=tempuser; password=toto123-";
-			config.DegreeOfParallelism = 100;
-			config.NumberOfHotels = 500;
+			config.DegreeOfParallelism = 10;
+			config.NumberOfHotels = 200;
 
 			var tplService = new TestServiceImpl(config);
 			Stopwatch sw = Stopwatch.StartNew();

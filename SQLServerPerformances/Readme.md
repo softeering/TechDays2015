@@ -1,4 +1,4 @@
-## SQL Server performances (may test some stuff from this session)
+#SQL Server performances
 >
 - Indexes with included columns
 - Filtered indexes for columns having small number of distinct values

@@ -14,7 +14,7 @@ namespace SQLDataInit
 		static void Main(string[] args)
 		{
 			string connectionString = ConfigurationManager.ConnectionStrings["LocalDB"].ConnectionString;
-			var numberOfRows = 10000;
+			var numberOfRows = 1000000;
 
 			DataTable data = new DataTable();
 			data.Columns.Add("HotelKey", typeof(int));

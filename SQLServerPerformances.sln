@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "SQLServerPerformances", "SQLServerPerformances\SQLServerPerformances.sqlproj", "{CFD8B7E8-829A-4280-8C1F-2B735C1B0132}"
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "SQLServerPerformances", "SQLServerPerformances\ColumnStoreIndex\ColumnStoreIndex.sqlproj", "{CFD8B7E8-829A-4280-8C1F-2B735C1B0132}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

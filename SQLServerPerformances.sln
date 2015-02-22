@@ -10,6 +10,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		SQLServerPerformances\Readme.md = SQLServerPerformances\Readme.md
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SQLDataInit", "SQLServerPerformances\SQLDataInit\SQLDataInit.csproj", "{AE8DAC52-9779-4D29-A293-96BEC31A2DE8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -22,6 +24,10 @@ Global
 		{CFD8B7E8-829A-4280-8C1F-2B735C1B0132}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CFD8B7E8-829A-4280-8C1F-2B735C1B0132}.Release|Any CPU.Build.0 = Release|Any CPU
 		{CFD8B7E8-829A-4280-8C1F-2B735C1B0132}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{AE8DAC52-9779-4D29-A293-96BEC31A2DE8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE8DAC52-9779-4D29-A293-96BEC31A2DE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE8DAC52-9779-4D29-A293-96BEC31A2DE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE8DAC52-9779-4D29-A293-96BEC31A2DE8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

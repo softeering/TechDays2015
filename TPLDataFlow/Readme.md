@@ -48,6 +48,6 @@ Here is a table summarizing the time taken by each implementation to process N (
 |100|200	|2372 (1x)	|3291 (1.39x)	|42725 (18.01x)	|
 |100|500	|8949 (1x)	|8949 (2.74x)	|107852 (33.07x)|
 
-We can see that the TPL Dataflow version is always the faster implementation even if the ParallelForEach one is close to it when the number of items is limited (200) - probably caused by a better locking mechanims within the TPL Dataflow librabry
+We can see that the TPL Dataflow implementation is always the fastest one even if the ParallelForEach one is close to it when the number of items is limited (200) - probably caused by a better locking mechanims within the TPL Dataflow librabry
 
 ##Conclusion

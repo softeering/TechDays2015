@@ -10,9 +10,8 @@ using TPL.DataFlow.Processor.TestService;
 
 namespace TPL.DataFlow.Processor
 {
-	class DataflowPalindromes
+	public class Program
 	{
-		// http://blog.stephencleary.com/2012/09/introduction-to-dataflow-part-2.html
 		static void Main(string[] args)
 		{
 			dynamic config = new JObject();

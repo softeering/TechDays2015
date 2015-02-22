@@ -1,4 +1,3 @@
-
 #Microsoft APS
 >
 - Microsoft Analytics Platform System appliance

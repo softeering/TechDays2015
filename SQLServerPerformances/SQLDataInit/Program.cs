@@ -17,24 +17,20 @@ namespace SQLDataInit
 			var numberOfRows = 1000000;
 
 			DataTable data = new DataTable();
-			data.Columns.Add("HotelKey", typeof(int));
 			data.Columns.Add("SubMarket", typeof(string));
-			data.Columns.Add("Int1", typeof(int));
 			data.Columns.Add("Dec1", typeof(decimal));
-			data.Columns.Add("BigInt1", typeof(int));
+
+			var rand = new Random();
 
 			for (int i = 0; i < numberOfRows; i++)
 			{
-				var rand = new Random();
 				var d = (decimal)rand.NextDouble();
-				data.Rows.Add(i, string.Format("SubMarket{0}", rand.Next(1, 100)), i,
-					((decimal)(i + 1) * 10000 / d == 0 ? (decimal)0.1 : d), i * 10000);
+				data.Rows.Add(string.Format("SM{0}", i), ((decimal)(i + 1) * 10000 / d == 0 ? (decimal)0.1 : d));
 			}
 
 			using (var connection = new SqlConnection(connectionString))
 			{
-				connection.DumpTable(data, "WithoutCSIndex", true).Wait();
-				connection.DumpTable(data, "WithCSIndex", true).Wait();
+				connection.DumpTable(data, "CSIndex", true).Wait();
 			}
 
 			Console.WriteLine("Completed...");

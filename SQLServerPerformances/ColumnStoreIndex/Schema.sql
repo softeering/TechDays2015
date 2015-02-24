@@ -18,9 +18,8 @@ begin
 	)
 end
 
-if exists (select * from sys.indexes where name = 'csindex')
-	drop index csindex on CSIndex;
-
+-- drop index csindex on CSIndex;
 -- create NONCLUSTERED columnstore index csindex on CSIndex (SubMarketID, Int1, Bigint1, Dec1);
 
-create clustered index cindex on CSIndex (SubMarketID, Int1, Bigint1, Dec1)
+-- drop index cindex on CSIndex;
+-- create clustered index cindex on CSIndex (SubMarketID, Int1, Bigint1, Dec1)

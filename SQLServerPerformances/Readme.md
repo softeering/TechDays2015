@@ -10,7 +10,7 @@ COLUMNSTORE indexes have been introduced in SQL Server 2012.
 - a table with a COLUMNSTORE index cannot be updated (this will change in SQL Server 2014)
 	- thanks to the CLUSTERED COLUMNSTORED index
 	- clustered column store index performances are close to the simple one
-	- this is not a big deal when it comes to an aggregates table in a datawarehouse environment
+	- this is not a big deal when it comes to an aggregates table in a data warehouse environment
 
 ###Benchmark
 - A table with 5 000 000 rows and the following columns has been created

@@ -1,9 +1,11 @@
 #SQL Server performances
 ##[COLUMNSTORE indexes](https://msdn.microsoft.com/en-US/library/gg492088(v=sql.110).aspx)
 COLUMNSTORE indexes have been introduced in SQL Server 2012.
+
 ###Pros
 - only load the specified column when asking for aggs on a number for example instead of loading the whole pages
 - for Expedient: COLUMNSTORE index are mostly used in data warehouse apps
+
 ###Cons
 - a table with a COLUMNSTORE index cannot be updated (this will change in SQL Server 2014)
 	- thanks to the CLUSTERED COLUMNSTORED index

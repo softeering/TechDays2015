@@ -20,6 +20,7 @@ COLUMNSTORE indexes have been introduced in SQL Server 2012.
 
 - And the following query has been executed twice for each type of index (while takign care of cleaning the buffers before each run)
 
+```tsql
 set statistics IO on;
 set statistics time on;
 dbcc dropcleanbuffers;
@@ -32,6 +33,7 @@ select
 	sum(cast(Int1 as bigint)) / avg(Dec1) as SunAvg
 from CSIndex
 group by SubMarketID
+```
 
 ####Results
 |Index|Run|Scan count|Logical reads|CPU time (ms)|Elapsed time (ms)|

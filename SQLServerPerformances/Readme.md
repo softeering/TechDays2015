@@ -36,8 +36,8 @@ group by SubMarketID
 ####Results
 |Index|Run|Scan count|Logical reads|CPU time (ms)|Elapsed time (ms)|
 |---|---|---|---|---|---|
-|			|1	|5	|23475	|6015	|1627	|
-|			|2	|5	|23475	|5937	|1610	|
+|NO INDEX	|1	|5	|23475	|6015	|1627	|
+|NO INDEX	|2	|5	|23475	|5937	|1610	|
 |CLUSTERED	|1	|5	|24021	|3452	|1030	|
 |CLUSTERED	|2	|5	|24021	|3296	|988	|
 |COLUMNSTORE|2	|4	|12894	|501	|471	|

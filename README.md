@@ -6,7 +6,7 @@
 
 #Back office for mobile applications (Azure mobile services)
 >
-- The SDK available for all mobile platforms (xamrin, iOS, windows phone, javascript...)
+- The SDK is available for all mobile platforms (xamrin, iOS, windows phone, javascript...)
 - Can now host web jobs with scheduling in a Azure web site
 - Free for limited ressources - good for testing / POC purposes
 - DocumentDB and Azure Search were used during the demo (actually in preview)

@@ -11,6 +11,7 @@ COLUMNSTORE indexes have been introduced in SQL Server 2012.
 	- thanks to the CLUSTERED COLUMNSTORED index
 	- clustered column store index performances are close to the simple one
 	- this is not a big deal when it comes to an aggregates table in a data warehouse environment
+	- when a new row is inserted in a table that have a CLUSTERED COLUMNSTORED, it's inserted in the rowstore heap. When the rowstore heap is full then it's moved to the ColumnStored. (Update of a row is basically a delete+insert)
 
 ###Benchmark
 - A table with 5 000 000 rows and the following columns has been created
@@ -49,8 +50,8 @@ group by SubMarketID
 
 We can see that, even if the clustered index brings better performances, the columnstore index is far the best one we can use for such a scenario (i.e. aggregates table with a lot of rows)
 
-##In-memory tables
-- main goal is to avoid contentions and locking
+##In-memory tables (Hekaton)
+- main goal is to avoid contentions and locking (it moves from a pessimistic locking to an optimistic locking system: no latch nor lock)
 - if you just want to load a table into memory -> DBCC CHECK TABLE XXX (all the pages will be loaded into he memory)
 - a in-memory table supports native compiled store procedures (compiled to C++ and executed by SQL Server)
 - completely integrated into SQL Server 2014 Enterprise
@@ -58,3 +59,7 @@ We can see that, even if the clustered index brings better performances, the col
 - never goes back to old versions
 - delta file are kept for history (deleted items for example)
 - the best performances are achieved with SSD
+- limitations: no trigger, no foreign keys, no check constraint, no alter table
+- in next versions of Sql Server: 
+	- Hekaton v2 = some limitations will be removed
+	- Clustered ColumnStore indexes for in-memory tables

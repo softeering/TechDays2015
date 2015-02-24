@@ -14,10 +14,13 @@ namespace SQLDataInit
 		static void Main(string[] args)
 		{
 			string connectionString = ConfigurationManager.ConnectionStrings["LocalDB"].ConnectionString;
-			var numberOfRows = 1000000;
+			var numberOfRows = 5000000;
 
 			DataTable data = new DataTable();
 			data.Columns.Add("SubMarketID", typeof(int));
+			data.Columns.Add("MarketID", typeof(int));
+			data.Columns.Add("Int1", typeof(int));
+			data.Columns.Add("Bigint1", typeof(long));
 			data.Columns.Add("Dec1", typeof(decimal));
 
 			var rand = new Random();
@@ -25,7 +28,7 @@ namespace SQLDataInit
 			for (int i = 0; i < numberOfRows; i++)
 			{
 				var d = (decimal)rand.NextDouble();
-				data.Rows.Add(rand.Next(1,1000), ((decimal)(i + 1) * 10000 / d == 0 ? (decimal)0.1 : d));
+				data.Rows.Add(rand.Next(1, 1000), rand.Next(1, 200), i, i * 1000, ((decimal)(i + 1) * 10000 / d == 0 ? (decimal)0.1 : d));
 			}
 
 			using (var connection = new SqlConnection(connectionString))

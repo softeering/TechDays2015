@@ -1,4 +1,5 @@
 ﻿-- http://blog.sqlauthority.com/2011/10/29/sql-server-fundamentals-of-columnstore-index/
+use SQLServerPerf;
 
 set statistics IO on;
 set statistics time on;

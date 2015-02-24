@@ -22,7 +22,7 @@ COLUMNSTORE indexes have been introduced in SQL Server 2012.
 
 - And the following query has been executed twice for each type of index (while taking care of cleaning the buffers before each run)
 
-```tsql
+```sql
 set statistics IO on;
 set statistics time on;
 dbcc dropcleanbuffers;

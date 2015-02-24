@@ -5,10 +5,10 @@ set statistics time on;
 dbcc dropcleanbuffers;
 
 select 
-	SubMarket, 
+	SubMarketID, 
 	sum(Dec1)
 from CSIndex
-group by SubMarket
+group by SubMarketID
 option (IGNORE_NONCLUSTERED_COLUMNSTORE_INDEX);
 
 go
@@ -18,7 +18,7 @@ set statistics time on;
 dbcc dropcleanbuffers;
 
 select 
-	SubMarket, 
+	SubMarketID, 
 	sum(Dec1)
 from CSIndex
-group by SubMarket
+group by SubMarketID

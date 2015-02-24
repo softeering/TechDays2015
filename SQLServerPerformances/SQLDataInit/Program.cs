@@ -17,7 +17,7 @@ namespace SQLDataInit
 			var numberOfRows = 1000000;
 
 			DataTable data = new DataTable();
-			data.Columns.Add("SubMarket", typeof(string));
+			data.Columns.Add("SubMarketID", typeof(int));
 			data.Columns.Add("Dec1", typeof(decimal));
 
 			var rand = new Random();
@@ -25,7 +25,7 @@ namespace SQLDataInit
 			for (int i = 0; i < numberOfRows; i++)
 			{
 				var d = (decimal)rand.NextDouble();
-				data.Rows.Add(string.Format("SM{0}", i), ((decimal)(i + 1) * 10000 / d == 0 ? (decimal)0.1 : d));
+				data.Rows.Add(rand.Next(1,1000), ((decimal)(i + 1) * 10000 / d == 0 ? (decimal)0.1 : d));
 			}
 
 			using (var connection = new SqlConnection(connectionString))
